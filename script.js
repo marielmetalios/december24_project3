@@ -1,56 +1,53 @@
-// Mar checking live html
-console.log (document);
-
 
 // TODO: Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // id = add-employees-btn 
 
-//  
-  // TODO: Get user input to create and return an array of employee objects
+// TODO: Get user input to create and return an array of employee objects
 
-// define the array for collectEmployees so the entries can be logged
 
-// define collectEmployees and employee Info as arrays to populate with data from the new arrays (based on user input) BUT stop when the array hits a length of 6 [0],[1],[2],[3],[4],[5])     !
-const collectEmployees = []
-let employeeInfo = [firstName, lastName, salary];
+// define collectEmployees and create new array to populate with data from the new arrays (based on user input) BUT stop when the array hits a length of 6 [0],[1],[2],[3],[4],[5])     !
+const collectEmployees = function () {
+const employeesArray = [];
+let employeeInfo = '';
+};
 
-function employeeInfo () {
+addEmployeesBtn.addEventListener ('click', trackEmployeeData () { 
 // while loop to stop collecting data after 5 [0-6] users have been added
-  while (employeeInfo.length < 6) {
+// from JUNG - MAKE THE WHILE A BOOLEAN? i.e. while employeeInfo = true //
+  // while (trackEmployeeData.length < 3) 
+while (trackEmployeeData.length < 3) 
     let firstName = prompt ("Hi there, what is your first name?", "Please enter your first name");
     let lastName = prompt ("Hi again, what is your last name?", "Please enter your last name");
     let salary = prompt ("One more thing! $$$", "Please enter your target salary");
-    
-// check if salary input is a number 
+      }    // OK / Cancel. Confirm here is a boolean! True = OK, False = Cancel
+  if (confirm ("Add more employees?")) {
+  console.log ("Another employee added");
+} else {
+  console.log ("No more employees to add");
+  // check if salary input is a number 
   if (isNaN(salary)) {
     console.log('Not a Number');
   } else {
     console.log(`Salary is a #, ${salary}`);
-  }
+  _}
+});
 
+    // ^^Boolean - can we run switch to keep running, if switch is off then stop running! What can track the true or false value?
+    
 // add each data entry (objects - numbers and strings) into the array
 employeeInfo.push(`${firstName}, ${lastName}, ${salary}`);
   }
   console.log("New User:", newUser);
 
-// OK / Cancel. Confirm here is a boolean! True = OK, False = Cancel
-if (confirm ("Add more employees?")) {
-  console.log ("Another employee added");
-} else {
-  console.log ("No more employees to add");
-}
-
-  return collectEmployees (firstName, lastName, salary);
-}
+// 
+  return employeeInfo (`${firstName}, ${lastName}, ${salary}`); 
 
 // Mar test for console.log to make sure prompt function is working
 console.log (firstName, lastName, salary);
 
 // Mar test to make sure collectEmployees array is actually populating with objects
 console.log (collectEmployees);
-
-
 
 //  do we need to call the collect employees function again?? 
 // collectEmployees ();
@@ -74,8 +71,6 @@ let newEmployee = [firstName, lastName, salary];
 
 
 
-
-
 TODO:// Display the average salary
   // TODO: Calculate and display the average salary
 // MAR TESTING FOR AVERAGE
@@ -92,13 +87,13 @@ const displayAverageSalary = function(employeesArray) {
   }
   
 
-  console.log (`The average employee salary between our" ${employeeInfo.firstName.length} "employee(s) is" `displayAverageSalary`); 
+  console.log (`The average employee salary between our ${employeeInfo.firstName.length} "employee(s) is" ${displayAverageSalary}`); 
 
 // MAR - NEED TO ASK ABOUT THE SUM + EMPLOYEES.ARRAY[I]???? and +=
 
 // // Select a random employee
 // const getRandomEmployee = function(employeesArray) {
-//   // TODO: Select and display a random employee
+TODO: Select and display a random employee
 // }
 
 // trackEmployeeData ();
